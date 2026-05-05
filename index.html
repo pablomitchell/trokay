@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trokay Consulting</title>
+
+  <!-- Open Graph / LinkedIn preview -->
+  <meta property="og:title" content="Trokay Consulting">
+  <meta property="og:description" content="Strategic advisory for teams navigating complex technical and business challenges.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trokay.co">
+  <!-- <meta property="og:image" content="https://trokay.co/og-image.png"> -->
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#f8fafc',
+              100: '#f1f5f9',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans text-brand-800 bg-white antialiased">
+
+  <!-- ============ NAV ============ -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-widest uppercase text-brand-900">Trokay</a>
+      <div class="flex gap-6 text-sm font-medium text-brand-600">
+        <a href="#about" class="hover:text-brand-900 transition-colors">About</a>
+        <a href="#services" class="hover:text-brand-900 transition-colors">Services</a>
+        <a href="#contact" class="hover:text-brand-900 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="py-24 md:py-32 px-6 text-center bg-brand-50">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-900 mb-6">
+        Trokay Consulting
+      </h1>
+      <!-- TODO: Replace with your tagline. This is the most important line on the page. -->
+      <p class="text-lg md:text-xl text-brand-600 mb-10 leading-relaxed">
+        Strategic advisory for teams navigating complex technical and business challenges. From architecture to operations, we help you ship with confidence.
+      </p>
+      <a href="#contact"
+         class="inline-block px-8 py-3.5 border-2 border-brand-900 text-brand-900 font-semibold
+                hover:bg-brand-900 hover:text-white transition-all duration-200">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-20 px-6">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold text-brand-900 mb-6">About</h2>
+      <!-- TODO: Replace with your bio -->
+      <p class="text-brand-600 text-lg leading-relaxed mb-4">
+        Trokay is a consulting practice founded by [Your Name], with [N] years of experience in [domain areas]. We work with companies ranging from early-stage startups to established enterprises, bringing hands-on expertise where it matters most.
+      </p>
+      <p class="text-brand-600 text-lg leading-relaxed">
+        Our approach is direct: understand the real problem, cut through complexity, and deliver solutions that work in production, not just in presentations. Every engagement is led personally, not handed off to juniors.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="py-20 px-6 bg-brand-50 border-t border-b border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold text-brand-900 text-center mb-12">What We Do</h2>
+      <!-- TODO: Replace with your actual service areas -->
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="border border-gray-200 bg-white p-8">
+          <h3 class="text-lg font-bold text-brand-900 mb-3">Technical Strategy</h3>
+          <p class="text-brand-600 leading-relaxed">
+            Architecture reviews, technology selection, and roadmap planning. We help you make decisions that hold up under real-world load and team growth.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 bg-white p-8">
+          <h3 class="text-lg font-bold text-brand-900 mb-3">Quantitative Analysis</h3>
+          <p class="text-brand-600 leading-relaxed">
+            Data modeling, risk analytics, and backtesting frameworks. Deep domain expertise in financial and insurance data systems.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 bg-white p-8">
+          <h3 class="text-lg font-bold text-brand-900 mb-3">Hands-On Engineering</h3>
+          <p class="text-brand-600 leading-relaxed">
+            Not just advice&mdash;we write code. Python, data pipelines, API design, and production-grade implementations delivered on your timeline.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="py-20 px-6">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold text-brand-900 text-center mb-12">What Clients Say</h2>
+
+      <!-- TODO: Replace with real testimonials (with client permission) -->
+      <div class="border-l-4 border-gray-300 pl-6 py-4 mb-8 bg-brand-50">
+        <blockquote class="text-brand-600 text-lg italic leading-relaxed mb-3">
+          "[Client testimonial placeholder. A specific quote about a specific result works
+          10x better than generic praise. Example: 'Trokay helped us cut our data pipeline
+          processing time from 4 hours to 12 minutes.']"
+        </blockquote>
+        <cite class="text-sm font-semibold text-brand-700 not-italic">
+          &mdash; [Client Name], [Title] at [Company]
+        </cite>
+      </div>
+
+      <div class="border-l-4 border-gray-300 pl-6 py-4 bg-brand-50">
+        <blockquote class="text-brand-600 text-lg italic leading-relaxed mb-3">
+          "[Second testimonial. Focus on the business outcome, not how nice you are to work with.]"
+        </blockquote>
+        <cite class="text-sm font-semibold text-brand-700 not-italic">
+          &mdash; [Client Name], [Title] at [Company]
+        </cite>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-20 px-6 bg-white border-t border-gray-100">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-brand-900 mb-4">Let's Talk</h2>
+      <p class="text-brand-600 text-lg mb-10">
+        Have a challenge you'd like to discuss? Reach out directly.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:hello@trokay.co"
+           class="inline-block px-8 py-3.5 border-2 border-brand-900 text-brand-900 font-semibold
+                  hover:bg-brand-900 hover:text-white transition-all duration-200">
+          hello@trokay.co
+        </a>
+        <!-- TODO: Replace with your LinkedIn URL -->
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+           class="inline-block px-8 py-3.5 border-2 border-brand-900 text-brand-900 font-semibold
+                  hover:bg-brand-900 hover:text-white transition-all duration-200">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="py-8 px-6 text-center text-sm text-gray-400 border-t border-gray-100">
+    &copy; 2026 Trokay Consulting. All rights reserved.
+  </footer>
+
+</body>
+</html>
