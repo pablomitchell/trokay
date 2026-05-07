@@ -32,10 +32,28 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       padding: 80px 24px;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 92vh;
+      width: 92vh;
+      background: url('trokay.png') center/contain no-repeat;
+      opacity: 0.10;
+      pointer-events: none;
+      z-index: 0;
     }
     main {
       max-width: 540px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
     header {
       display: flex;
@@ -125,6 +143,15 @@
       margin-top: 80px;
       font-size: 13px;
       color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer img.mark {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
 
     @media (max-width: 600px) {
@@ -167,7 +194,7 @@
       full-time hire. Investment models, simulation engines, quant team formation.
     </p>
     <p class="muted">
-      Available for 1-hour consults at $500.
+      Available for 1-hour consultations at $500.
     </p>
 
     <section>
@@ -188,7 +215,7 @@
       </ul>
     </section>
 
-    <footer>© 2026 Trokay Advisors</footer>
+    <footer><img class="mark" src="trokay.png" alt="">© 2026 Trokay Advisors</footer>
   </main>
 </body>
 </html>
